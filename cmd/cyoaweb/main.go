@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"flag"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("hi")
+	filename := flag.String("file", "gopher.json", "the file with teh CYOA story")
+	flag.Parse()
+	fmt.Printf("Using the story in %s\n", *filename)
 }
