@@ -3,11 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/pwinning1991/cyoa"
 	"log"
 	"net/http"
 	"os"
-
-	"github.com/pwinning1991/cyoa"
 )
 
 func main() {
